@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-vwtp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/jfischer-tenant/my-app/devfile-sample-java-springboot-basic-vwtp@sha256:668ee5aaf59e55d682526c4bb228127a235971d265503f513538529353c414f3
+        name: my-java-springboot
+        resources: {}
+status: {}
