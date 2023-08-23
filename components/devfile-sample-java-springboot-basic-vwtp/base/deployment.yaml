@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-java-springboot-basic-vwtp
     spec:
       containers:
-      - image: java-springboot-image:latest
+      - image: quay.io/redhat-user-workloads-stage/jfischer-tenant/my-app/devfile-sample-java-springboot-basic-vwtp@sha256:c7c6a8f10f8ed6332ddf5ab7a23dc7f1cc9ba8f772460dfed43ce4c482e23579
         name: my-java-springboot
         ports:
         - containerPort: 8081
